@@ -1,0 +1,70 @@
+[2024-01-28 10:18:47]	[done]
+	build successfully !
+
+[2024-01-28 11:09:50]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol UI_TX_Write_graphics_One_Init multiply defined (by Write_Data.o and UI_TX_task.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2024-01-28 11:10:27]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol UI_TX_Write_graphics_One_Init multiply defined (by Write_Data.o and UI_TX_task.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2024-01-28 11:10:50]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol UI_TX_Write_graphics_One_Init multiply defined (by Write_Data.o and UI_TX_task.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2024-01-28 11:12:46]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol UI_TX_Write_graphics_One_Init multiply defined (by Write_Data.o and UI_TX_task.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2024-01-28 11:14:12]	[done]
+	build successfully !
+
+[2024-01-28 11:14:49]	compilation failed at : "d:\Workspace\GIT_file\new_engineer\F4_Salve\RUI\UI_TX_task.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IRUI -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_DEVELOPMENT -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/RUI/UI_TX_task.o -MMD ./RUI/UI_TX_task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./RUI/UI_TX_task.c:20:6: error: conflicting types for 'UI_TX_Write_graphics_One'
+void UI_TX_Write_graphics_One(graphic_data_Typdef *graphic_data_1)
+     ^
+RUI/Write_Data.h:383:6: note: previous declaration is here
+void UI_TX_Write_graphics_One(  ALL_TX_Typdef *UI_TX ,
+     ^
+1 error generated.
+
+[2024-01-28 11:15:39]	[done]
+	build successfully !
+
+[2024-01-28 11:22:52]	[done]
+	build successfully !
+
+[2024-01-28 11:23:02]	[done]
+	build successfully !
+
+[2024-03-01 13:22:04]	[done]
+	build successfully !
+
+[2024-03-01 13:25:04]	[done]
+	build successfully !
+

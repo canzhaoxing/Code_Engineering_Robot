@@ -1,0 +1,40 @@
+--cpu=Cortex-M4.fp --library_type=microlib --scatter "d:/Workspace/GIT_file/new_engineer/F4_Salve/build/RUI_ENGINEER/RUI_ENGINEER.sct" --diag_suppress=L6329 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list ./build/RUI_ENGINEER/RUI_ENGINEER.map
+./build/RUI_ENGINEER/.obj/Core/Src/can.o
+./build/RUI_ENGINEER/.obj/Core/Src/dma.o
+./build/RUI_ENGINEER/.obj/Core/Src/gpio.o
+./build/RUI_ENGINEER/.obj/Core/Src/main.o
+./build/RUI_ENGINEER/.obj/Core/Src/stm32f4xx_hal_msp.o
+./build/RUI_ENGINEER/.obj/Core/Src/stm32f4xx_it.o
+./build/RUI_ENGINEER/.obj/Core/Src/system_stm32f4xx.o
+./build/RUI_ENGINEER/.obj/Core/Src/tim.o
+./build/RUI_ENGINEER/.obj/Core/Src/usart.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+./build/RUI_ENGINEER/.obj/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
+./build/RUI_ENGINEER/.obj/MDK-ARM/startup_stm32f427xx.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_ALL_CONTAL.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_BOTTOM.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_CAN.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_IRQHANDLER.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_MATH.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_MOTOR.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_PID.o
+./build/RUI_ENGINEER/.obj/RUI/RUI_ROOT_INIT.o
+./build/RUI_ENGINEER/.obj/RUI/Read_Data.o
+./build/RUI_ENGINEER/.obj/RUI/UI_TX_task.o
+./build/RUI_ENGINEER/.obj/RUI/Write_Data.o -o ./build/RUI_ENGINEER/RUI_ENGINEER.axf

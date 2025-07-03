@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "openocd",
+            "servertype": "openocd",
+            "executable": "build\\RUI_ENGINEER\\RUI_ENGINEER.elf",
+            "runToEntryPoint": "main",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f4x.cfg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,471 @@
+[2023-09-15 11:34:57]	[done]
+	build successfully !
+
+[2023-09-15 11:36:16]	[done]
+	build successfully !
+
+[2023-09-19 10:47:28]	[done]
+	build successfully !
+
+[2023-12-31 14:48:32]	[done]
+	build successfully !
+
+[2024-01-03 15:28:14]	[done]
+	build successfully !
+
+[2024-01-03 15:34:40]	[done]
+	build successfully !
+
+[2024-01-04 21:31:04]	[done]
+	build successfully !
+
+[2024-01-06 19:07:41]	[done]
+	build successfully !
+
+[2024-01-06 19:14:34]	[done]
+	build successfully !
+
+[2024-02-15 07:59:46]	[done]
+	build successfully !
+
+[2024-03-01 13:09:57]	[done]
+	build successfully !
+
+[2024-03-01 13:12:05]	[done]
+	build successfully !
+
+[2024-03-14 08:58:57]	compilation failed at : "d:\Workspace\GIT_file\new_engineer\F4_Master\TASK\head_task.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP/ADC -IBSP/CAN -IBSP/DBUS -IBSP/MOTER_PID -IBSP/UI -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/TASK/head_task.o -MMD ./TASK/head_task.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./TASK/head_task.c:27:20: error: no member named 'MOTOR_HEAD_DM' in 'struct RUI_ROOT_STATUS_Typedef'; did you mean 'MOTOR_HEAD_Yaw'?
+                        RUI_ROOT.STATUS.MOTOR_HEAD_DM                    == RUI_DF_OFFLINE ||
+                                        ^~~~~~~~~~~~~
+                                        MOTOR_HEAD_Yaw
+TASK/RUI_ROOT_INIT.h:41:13: note: 'MOTOR_HEAD_Yaw' declared here
+    uint8_t MOTOR_HEAD_Yaw;
+            ^
+1 error generated.
+
+[2024-03-14 08:59:23]	[done]
+	build successfully !
+
+[2024-03-14 08:59:56]	[done]
+	build successfully !
+
+[2024-03-14 09:00:20]	[done]
+	build successfully !
+
+[2024-03-14 09:18:00]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol RUI_V_MOTOR_Image multiply defined (by RUI_MOTOR.o and RUI_CAN.o).
+Error: L6200E: Symbol RUI_V_MOTOR_Image multiply defined (by RUI_PID.o and RUI_CAN.o).
+Error: L6200E: Symbol RUI_V_MOTOR_Image multiply defined (by main.o and RUI_CAN.o).
+Error: L6200E: Symbol RUI_V_MOTOR_Image multiply defined (by RUI_ROOT_INIT.o and RUI_CAN.o).
+Error: L6200E: Symbol RUI_V_MOTOR_Image multiply defined (by head_task.o and RUI_CAN.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 5 error messages.
+
+
+[2024-03-14 09:22:09]	[done]
+	build successfully !
+
+[2024-04-09 13:38:08]	compilation failed at : "d:\Workspace\GIT_file\F4_Master(1)\TASK\head_task.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/TASK/head_task.o -MMD ./TASK/head_task.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+In file included from ./TASK/RUI_ROOT_INIT.c:12:
+TASK/RUI_ROOT_INIT.h:63:32: warning: declaration of 'struct DM_MOTOR_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR);
+                               ^
+TASK/RUI_ROOT_INIT.h:64:41: warning: declaration of 'struct Manipulator_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR);
+                                        ^
+./TASK/RUI_ROOT_INIT.c:61:32: warning: declaration of 'struct DM_MOTOR_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR)
+                               ^
+./TASK/RUI_ROOT_INIT.c:61:9: error: conflicting types for 'RUI_F_DM_STATUS'
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR)
+        ^
+TASK/RUI_ROOT_INIT.h:63:9: note: previous declaration is here
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR);
+        ^
+./TASK/RUI_ROOT_INIT.c:63:10: error: incomplete definition of type 'struct DM_MOTOR_Typedef'
+    MOTOR->DATA.ONLINE_JUDGE_TIME--;
+    ~~~~~^
+./TASK/RUI_ROOT_INIT.c:61:32: note: forward declaration of 'struct DM_MOTOR_Typedef'
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR)
+                               ^
+./TASK/RUI_ROOT_INIT.c:65:14: error: incomplete definition of type 'struct DM_MOTOR_Typedef'
+    if (MOTOR->DATA.ONLINE_JUDGE_TIME < 5)
+        ~~~~~^
+./TASK/RUI_ROOT_INIT.c:61:32: note: forward declaration of 'struct DM_MOTOR_Typedef'
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR)
+                               ^
+./TASK/RUI_ROOT_INIT.c:67:14: error: incomplete definition of type 'struct DM_MOTOR_Typedef'
+        MOTOR->DATA.ONLINE_JUDGE_TIME = 0;
+        ~~~~~^
+./TASK/RUI_ROOT_INIT.c:61:32: note: forward declaration of 'struct DM_MOTOR_Typedef'
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR)
+                               ^
+./TASK/RUI_ROOT_INIT.c:83:41: warning: declaration of 'struct Manipulator_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR)
+                                        ^
+./TASK/RUI_ROOT_INIT.c:83:9: error: conflicting types for 'RUI_F_Manipulator_STATUS'
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR)
+        ^
+TASK/RUI_ROOT_INIT.h:64:9: note: previous declaration is here
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR);
+        ^
+./TASK/RUI_ROOT_INIT.c:85:10: error: incomplete definition of type 'struct Manipulator_Typedef'
+    MOTOR->ONLINE_JUDGE_TIME--;
+    ~~~~~^
+./TASK/RUI_ROOT_INIT.c:83:41: note: forward declaration of 'struct Manipulator_Typedef'
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR)
+                                        ^
+./TASK/RUI_ROOT_INIT.c:87:14: error: incomplete definition of type 'struct Manipulator_Typedef'
+    if (MOTOR->ONLINE_JUDGE_TIME < 5)
+        ~~~~~^
+./TASK/RUI_ROOT_INIT.c:83:41: note: forward declaration of 'struct Manipulator_Typedef'
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR)
+                                        ^
+./TASK/RUI_ROOT_INIT.c:89:14: error: incomplete definition of type 'struct Manipulator_Typedef'
+        MOTOR->ONLINE_JUDGE_TIME = 0;
+        ~~~~~^
+./TASK/RUI_ROOT_INIT.c:83:41: note: forward declaration of 'struct Manipulator_Typedef'
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR)
+                                        ^
+4 warnings and 8 errors generated.
+In file included from ./TASK/head_task.c:16:
+TASK/RUI_ROOT_INIT.h:63:32: warning: declaration of 'struct DM_MOTOR_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_DM_STATUS(struct DM_MOTOR_Typedef* MOTOR);
+                               ^
+TASK/RUI_ROOT_INIT.h:64:41: warning: declaration of 'struct Manipulator_Typedef' will not be visible outside of this function [-Wvisibility]
+uint8_t RUI_F_Manipulator_STATUS(struct Manipulator_Typedef* MOTOR);
+                                        ^
+./TASK/head_task.c:42:2: warning: implicit declaration of function 'RUI_F_HEAD_DM_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+        ^
+./TASK/head_task.c:42:23: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+                             ^~~~~~~~~~~~~~
+                             RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:43:2: warning: implicit declaration of function 'RUI_F_HEAD_Manipulator_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+        ^
+./TASK/head_task.c:43:32: error: use of undeclared identifier 'Manipulator'
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+                                      ^
+./TASK/head_task.c:72:2: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des += RUI_V_CONTAL.HEAD.Yaw;
+        ^~~~~~~~~~~~~~
+        RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:72:17: error: no member named 'Moter_P_V_value' in 'struct RUI_MOTOR_Typedef'
+        RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des += RUI_V_CONTAL.HEAD.Yaw;
+        ~~~~~~~~~~~~~~ ^
+./TASK/head_task.c:73:2: error: use of undeclared identifier 'Manipulator'
+        Manipulator.Angle_MOTER.DataNeaten.Pitch        -= RUI_V_CONTAL.HEAD.Pitch;//*498.53f;
+        ^
+./TASK/head_task.c:74:2: error: use of undeclared identifier 'Manipulator'
+        Manipulator.Angle_MOTER.DataNeaten.Roll         += RUI_V_CONTAL.HEAD.Roll;
+        ^
+./TASK/head_task.c:76:5: error: use of undeclared identifier 'Manipulator'
+        if(Manipulator.Angle_MOTER.DataNeaten.Pitch > 329030)           
+           ^
+./TASK/head_task.c:77:3: error: use of undeclared identifier 'Manipulator'
+                Manipulator.Angle_MOTER.DataNeaten.Pitch = 329030 , RUI_V_CONTAL.HEAD.Pitch = 329030;
+                ^
+./TASK/head_task.c:78:5: error: use of undeclared identifier 'Manipulator'
+        if(Manipulator.Angle_MOTER.DataNeaten.Pitch < -329030)          
+           ^
+./TASK/head_task.c:79:3: error: use of undeclared identifier 'Manipulator'
+                Manipulator.Angle_MOTER.DataNeaten.Pitch = -329030 , RUI_V_CONTAL.HEAD.Pitch = -329030;
+                ^
+./TASK/head_task.c:80:5: error: use of undeclared identifier 'Manipulator'
+        if(Manipulator.Angle_MOTER.DataNeaten.Roll > 164515)            
+           ^
+./TASK/head_task.c:81:3: error: use of undeclared identifier 'Manipulator'
+                Manipulator.Angle_MOTER.DataNeaten.Roll = 164515 , RUI_V_CONTAL.HEAD.Roll = 164515;
+                ^
+./TASK/head_task.c:82:5: error: use of undeclared identifier 'Manipulator'
+        if(Manipulator.Angle_MOTER.DataNeaten.Roll < -164515)           
+           ^
+./TASK/head_task.c:83:3: error: use of undeclared identifier 'Manipulator'
+                Manipulator.Angle_MOTER.DataNeaten.Roll = -164515 , RUI_V_CONTAL.HEAD.Roll = -164515;
+                ^
+./TASK/head_task.c:119:3: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+                RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des  = 0.0f;
+                ^~~~~~~~~~~~~~
+                RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:119:18: error: no member named 'Moter_P_V_value' in 'struct RUI_MOTOR_Typedef'
+                RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des  = 0.0f;
+                ~~~~~~~~~~~~~~ ^
+./TASK/head_task.c:132:2: warning: implicit declaration of function 'WHW_F_HEAD_DM4310_STUCK' is invalid in C99 [-Wimplicit-function-declaration]
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+        ^
+./TASK/head_task.c:132:27: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+                                 ^~~~~~~~~~~~~~
+                                 RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+5 warnings and 17 errors generated.
+
+[2024-04-09 13:39:19]	compilation failed at : "d:\Workspace\GIT_file\F4_Master(1)\TASK\head_task.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/TASK/head_task.o -MMD ./TASK/head_task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./TASK/head_task.c:42:2: warning: implicit declaration of function 'RUI_F_HEAD_DM_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+        ^
+./TASK/head_task.c:42:23: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+                             ^~~~~~~~~~~~~~
+                             RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:43:2: warning: implicit declaration of function 'RUI_F_HEAD_Manipulator_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+        ^
+./TASK/head_task.c:43:32: error: use of undeclared identifier 'Manipulator'
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+                                      ^
+./TASK/head_task.c:108:3: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+                RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des  = 0.0f;
+                ^~~~~~~~~~~~~~
+                RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:108:18: error: no member named 'Moter_P_V_value' in 'struct RUI_MOTOR_Typedef'
+                RUI_V_MOTOR_DM.Moter_P_V_value.MOTER_TWO.p_des  = 0.0f;
+                ~~~~~~~~~~~~~~ ^
+./TASK/head_task.c:121:2: warning: implicit declaration of function 'WHW_F_HEAD_DM4310_STUCK' is invalid in C99 [-Wimplicit-function-declaration]
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+        ^
+./TASK/head_task.c:121:27: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+                                 ^~~~~~~~~~~~~~
+                                 RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+3 warnings and 5 errors generated.
+
+[2024-04-09 13:39:45]	compilation failed at : "d:\Workspace\GIT_file\F4_Master(1)\TASK\head_task.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/TASK/head_task.o -MMD ./TASK/head_task.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./TASK/head_task.c:42:2: warning: implicit declaration of function 'RUI_F_HEAD_DM_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+        ^
+./TASK/head_task.c:42:23: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        RUI_F_HEAD_DM_CLEAR(&RUI_V_MOTOR_DM);
+                             ^~~~~~~~~~~~~~
+                             RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+./TASK/head_task.c:43:2: warning: implicit declaration of function 'RUI_F_HEAD_Manipulator_CLEAR' is invalid in C99 [-Wimplicit-function-declaration]
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+        ^
+./TASK/head_task.c:43:32: error: use of undeclared identifier 'Manipulator'
+        RUI_F_HEAD_Manipulator_CLEAR(&Manipulator);
+                                      ^
+./TASK/head_task.c:117:2: warning: implicit declaration of function 'WHW_F_HEAD_DM4310_STUCK' is invalid in C99 [-Wimplicit-function-declaration]
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+        ^
+./TASK/head_task.c:117:27: error: use of undeclared identifier 'RUI_V_MOTOR_DM'; did you mean 'RUI_V_MOTOR_SWAY'?
+        WHW_F_HEAD_DM4310_STUCK(&RUI_V_MOTOR_DM , 10000 , 10);//<B4><EF><C3><EE><B5><E7><BB><FA><B6><C2>?<BC><EC><B2>?<CA><FD>
+                                 ^~~~~~~~~~~~~~
+                                 RUI_V_MOTOR_SWAY
+BSP\RUI_MOTOR.h:88:33: note: 'RUI_V_MOTOR_SWAY' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_SWAY;
+                                ^
+3 warnings and 3 errors generated.
+
+[2024-04-09 13:40:23]	[done]
+	build successfully !
+
+[2024-04-09 14:03:59]	[done]
+	build successfully !
+
+[2024-04-09 14:06:14]	[done]
+	build successfully !
+
+[2024-04-09 14:27:15]	[done]
+	build successfully !
+
+[2024-04-09 14:27:39]	[done]
+	build successfully !
+
+[2024-04-09 14:27:51]	[done]
+	build successfully !
+
+[2024-04-09 14:29:59]	[done]
+	build successfully !
+
+[2024-04-09 14:30:49]	[done]
+	build successfully !
+
+[2024-04-09 14:31:04]	[done]
+	build successfully !
+
+[2024-04-09 14:36:14]	[done]
+	build successfully !
+
+[2024-04-09 14:38:37]	[done]
+	build successfully !
+
+[2024-04-09 14:39:29]	[done]
+	build successfully !
+
+[2024-04-09 14:47:42]	[done]
+	build successfully !
+
+[2024-04-09 14:48:05]	[done]
+	build successfully !
+
+[2024-04-09 14:50:36]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol RUI_F_MOTOR_CAN_RX_6020RM (referred from RUI_CAN.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2024-04-09 14:51:02]	[done]
+	build successfully !
+
+[2024-04-09 15:02:58]	[done]
+	build successfully !
+
+[2024-04-09 15:04:22]	[done]
+	build successfully !
+
+[2024-04-09 15:06:17]	[done]
+	build successfully !
+
+[2024-04-09 15:07:27]	[done]
+	build successfully !
+
+[2024-04-09 15:11:47]	compilation failed at : "d:\Workspace\GIT_file\F4_Master(1)\BSP\RUI_CAN.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/BSP/RUI_CAN.o -MMD ./BSP/RUI_CAN.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./BSP/RUI_CAN.c:157:32: error: use of undeclared identifier 'RUI_V_MOTOR_right'; did you mean 'RUI_V_MOTOR_Right'?
+                                RUI_F_MOTOR_CAN_RX_2006RM(&RUI_V_MOTOR_right,rx_data);
+                                                           ^~~~~~~~~~~~~~~~~
+                                                           RUI_V_MOTOR_Right
+BSP/RUI_MOTOR.h:90:33: note: 'RUI_V_MOTOR_Right' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_Right;
+                                ^
+1 error generated.
+
+[2024-04-09 15:11:57]	compilation failed at : "d:\Workspace\GIT_file\F4_Master(1)\Core\Src\main.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:227:11: error: use of undeclared identifier 'RUI_V_MOTOR_right'; did you mean 'RUI_V_MOTOR_Right'?
+          RUI_V_MOTOR_right.PID_S.All_out,
+          ^~~~~~~~~~~~~~~~~
+          RUI_V_MOTOR_Right
+BSP\RUI_MOTOR.h:90:33: note: 'RUI_V_MOTOR_Right' declared here
+extern struct RUI_MOTOR_Typedef RUI_V_MOTOR_Right;
+                                ^
+1 error generated.
+
+[2024-04-09 15:12:07]	[done]
+	build successfully !
+
+[2024-04-09 15:14:37]	[done]
+	build successfully !
+
+[2024-04-09 15:18:21]	[done]
+	build successfully !
+
+[2024-04-09 15:19:03]	[done]
+	build successfully !
+
+[2024-04-09 15:32:07]	[done]
+	build successfully !
+
+[2024-04-09 15:42:36]	[done]
+	build successfully !
+
+[2024-04-09 15:53:39]	[done]
+	build successfully !
+
+[2024-04-09 15:54:40]	[done]
+	build successfully !
+
+[2024-04-09 15:58:48]	[done]
+	build successfully !
+
+[2024-04-09 16:09:22]	[done]
+	build successfully !
+
+[2024-04-09 16:12:52]	[done]
+	build successfully !
+
+[2024-04-09 16:13:54]	[done]
+	build successfully !
+
+[2024-04-19 09:24:58]	compilation failed at : "d:\Workspace\GIT_file\new_engineer\F4_Master(1)\Core\Src\freertos.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/Core/Src/freertos.o -MMD ./Core/Src/freertos.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+In file included from ./BSP/ADC_Start.c:1:
+BSP/ADC_Start.h:4:10: fatal error: 'adc.h' file not found
+#include "adc.h"
+         ^~~~~~~
+1 error generated.
+./Core/Src/freertos.c:30:10: fatal error: 'Reset_task.h' file not found
+#include "Reset_task.h"
+         ^~~~~~~~~~~~~~
+1 error generated.
+
+[2024-04-19 09:25:58]	compilation failed at : "d:\Workspace\GIT_file\new_engineer\F4_Master(1)\BSP\ADC_Start.c", exit code: 1
+command: 
+  "D:\TMD\MDK\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -ITASK -IBSP -IMDK-ARM/RTE/_RUI_ENGINEER -DUSE_HAL_DRIVER -DSTM32F427xx -DRUI_DF_PRODUCTION -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mlittle-endian -D__MICROLIB -O0 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/RUI_ENGINEER/.obj/BSP/ADC_Start.o -MMD ./BSP/ADC_Start.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+In file included from ./BSP/ADC_Start.c:1:
+BSP/ADC_Start.h:4:10: fatal error: 'adc.h' file not found
+#include "adc.h"
+         ^~~~~~~
+1 error generated.
+
+[2024-04-19 09:26:53]	[done]
+	build successfully !
+
+[2024-05-04 14:35:50]	[done]
+	build successfully !
+
+[2024-05-04 14:41:34]	[done]
+	build successfully !
+
